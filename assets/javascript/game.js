@@ -36,10 +36,6 @@ function startGame () {
 	document.getElementById("winCounter").innerHTML = winCount;
 	document.getElementById("lossCounter").innerHTML = lossCount;
 
-	console.log(selectedWord);
-	console.log(lettersinWord);
-	console.log(numBlanks);	
-	console.log(blanksAndSuccesses);	
 }
 
 function checkLetters(letter) {
@@ -77,7 +73,6 @@ function roundComplete() {
 	document.getElementById("wrongGuesses").innerHTML = wrongLetters.join("  ");
 
 	//Check if win :)
-	console.log("in Win")	
 	if (lettersinWord.toString() == blanksAndSuccesses.toString()) {
 		winCount++; 
 		alert("Far out! You won, cool cat (if male) fine lady (if female)");
